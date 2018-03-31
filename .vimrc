@@ -7,5 +7,7 @@ filetype indent on
 set lazyredraw
 set showmatch
 set ruler
-set colorcolumn=80
+# Highligh with magenta the 81th character
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%81v', 100)
 inoremap jk <esc>
